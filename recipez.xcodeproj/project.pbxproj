@@ -15,6 +15,9 @@
 		8E9AE27E1D83FA5100B26F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9AE27C1D83FA5100B26F36 /* LaunchScreen.storyboard */; };
 		8E9AE2891D83FA5100B26F36 /* recipezTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9AE2881D83FA5100B26F36 /* recipezTests.swift */; };
 		8E9AE2941D83FA5100B26F36 /* recipezUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9AE2931D83FA5100B26F36 /* recipezUITests.swift */; };
+		8E9AE2A61D8400B300B26F36 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9AE2A41D8400B300B26F36 /* Recipe+CoreDataProperties.swift */; };
+		8E9AE2A71D8400B300B26F36 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9AE2A51D8400B300B26F36 /* Recipe.swift */; };
+		8E9AE2AB1D84045C00B26F36 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9AE2AA1D84045C00B26F36 /* RecipeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		8E9AE28F1D83FA5100B26F36 /* recipezUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recipezUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9AE2931D83FA5100B26F36 /* recipezUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipezUITests.swift; sourceTree = "<group>"; };
 		8E9AE2951D83FA5100B26F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E9AE2A41D8400B300B26F36 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8E9AE2A51D8400B300B26F36 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
+		8E9AE2AA1D84045C00B26F36 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +105,10 @@
 		8E9AE26F1D83FA5100B26F36 /* recipez */ = {
 			isa = PBXGroup;
 			children = (
+				8E9AE2A31D84007800B26F36 /* View */,
+				8E9AE2A21D84007200B26F36 /* Controller */,
+				8E9AE2A11D84006B00B26F36 /* Model */,
 				8E9AE2701D83FA5100B26F36 /* AppDelegate.swift */,
-				8E9AE2721D83FA5100B26F36 /* ViewController.swift */,
 				8E9AE2741D83FA5100B26F36 /* Main.storyboard */,
 				8E9AE27A1D83FA5100B26F36 /* Assets.xcassets */,
 				8E9AE27C1D83FA5100B26F36 /* LaunchScreen.storyboard */,
@@ -126,6 +134,31 @@
 				8E9AE2951D83FA5100B26F36 /* Info.plist */,
 			);
 			path = recipezUITests;
+			sourceTree = "<group>";
+		};
+		8E9AE2A11D84006B00B26F36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E9AE2A41D8400B300B26F36 /* Recipe+CoreDataProperties.swift */,
+				8E9AE2A51D8400B300B26F36 /* Recipe.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8E9AE2A21D84007200B26F36 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E9AE2721D83FA5100B26F36 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8E9AE2A31D84007800B26F36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E9AE2AA1D84045C00B26F36 /* RecipeCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E9AE2731D83FA5100B26F36 /* ViewController.swift in Sources */,
+				8E9AE2A61D8400B300B26F36 /* Recipe+CoreDataProperties.swift in Sources */,
 				8E9AE2711D83FA5100B26F36 /* AppDelegate.swift in Sources */,
+				8E9AE2AB1D84045C00B26F36 /* RecipeCell.swift in Sources */,
 				8E9AE2791D83FA5100B26F36 /* recipez.xcdatamodeld in Sources */,
+				8E9AE2A71D8400B300B26F36 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
